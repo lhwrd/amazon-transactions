@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "amazon-transactions"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Howard <lhoward96@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "amazon_transactions", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "^4.16.0"
+beautifulsoup4 = "^4.12.2"
+pandas = "^2.1.4"
+lxml = "^4.9.4"
+html5lib = "^1.1"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+amazon = "amazon_transactions.main:main"
