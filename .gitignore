@@ -1,0 +1,8 @@
+.env
+invoices/
+*.csv
+*.json
+geckodriver
+*.ipynb
+__pycache__/
+.venv/
